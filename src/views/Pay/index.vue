@@ -142,7 +142,7 @@ export default {
           } else {
             // 判断用户是否真的支付了
             if (this.code === 200) {
-              // 清除定时器
+            // 清除定时器
               clearInterval(this.timer)
               this.timer = null
               // 关闭遮罩层

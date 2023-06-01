@@ -81,14 +81,15 @@ export default [
   {
     path: '/paysuccess',
     component: () => import('@/views/PaySuccess'),
-    meta: { show: true },
-    beforeEnter: (to, from, next) => {
-      if (from.path === '/pay') {
-        next()
-      } else {
-        next(false)
-      }
-    }
+    meta: { show: true }
+    // beforeEnter: (to, from, next) => {
+    //   console.log(from)
+    //   if (from.path === '/pay') {
+    //     next()
+    //   } else {
+    //     next(false)
+    //   }
+    // }
   },
   // 个人中心
   {
